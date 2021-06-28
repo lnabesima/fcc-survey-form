@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey Form - Financing Options</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Student loan & scholarship application form</h1>
+            <p id="description">Fill out the form below to apply for our loan and scholarship options.</p>
+        </header>
+        <main>
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label" class="form-label">Name</label>
+                    <input type="text" name="name" id="name"  placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label" class="form-label">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="john@doe.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="address" id="address-label" class="form-label">Address</label>
+                    <input type="text" name="adress" id="address" placeholder="Example St. 15, State">
+                </div>
+                <div class="form-group">
+                    <label for="phone" id="phone-label" class="form-label">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890">
+                </div>
+                <div class="form-group">
+                    <label for="uni-number" id="number-label" class="form-label">University Enrollment Number</label>
+                    <input type="number" name="uni-number" id="number" min="000001" max="999999" placeholder="000001" required>
+                </div>
+                <div class="form-group">
+                    <label for="courses" id="classes-label" class="form-label">Select your major</label>
+                    <select name="courses" id="courses">
+                        <option value="business-administration">Business Administration</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="law">Law</option>
+                        <option value="english-literature">English Literature</option>
+                    </select>
+
+
+
+                </div>
+                <div class="form-group">
+                    <label for="financing-options" id="financing-options" class="form-label">Select your option</label>
+                    <input type="radio" name="loan" id="financing-options" value="loan">
+                    <label for="loan" value="loan">I am requesting a student loan.</label>
+                    <input type="radio" name="scholarship" id="financing-options" value="scholarship">
+                    <label for="scholarship"value="scholarship">I am requesting a scholarship.</label>
+                </div>
+                <div class="form-group">
+                    <label for="scholarship-reason" class="scholarship-reason">If you have chosen a scholarship, please explain the reason for your request (5000 characters maximum).</label>
+                    <textarea name="reason" id="scholarship-reason" cols="72" rows="10" maxlength="5000"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="terms-accepted" id="terms-accepted" required>
+                    <label for="">I accept the terms and conditions for the loan application.</label>
+                    <input type="checkbox" name="sms-accepted" id="sms-accepted" checked>
+                    <label for="">I agree to receive updates about my application via SMS.</label>
+                    <input type="checkbox" name="email-accepted" id="email-accepted">
+                    <label for="">I agree to receive updates about my application via e-mail.</label>
+                </div>
+                <div class="form-group"></div>
+                <div class="form-group"></div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </div>
+</body>
+<footer>
+    <p>MIT - Mayk Internet Technologies - 20XX</p>
+
+</footer>
+</html>
