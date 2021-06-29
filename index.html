@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>FCC Survey Form - Financing Options</title>
 </head>
 <body>
@@ -37,6 +38,7 @@
                 <div class="form-group">
                     <label for="courses" id="classes-label" class="form-label">Select your major</label>
                     <select name="courses" id="dropdown">
+                        <option value="">Select an option</option>
                         <option value="business-administration">Business Administration</option>
                         <option value="medicine">Medicine</option>
                         <option value="law">Law</option>
@@ -46,8 +48,8 @@
 
 
                 </div>
-                <div class="form-group">
-                    <label for="financing-options" id="financing-options" class="form-label">Select your option</label>
+                <div class="form-group selection-buttons">
+                    <label for="financing-options" id="financing-options" class="form-label financing-label">Select your option</label>
                     <input type="radio" name="financing-option" id="financing-loan" value="loan">
                     <label for="loan" value="loan">I am requesting a student loan.</label>
                     <input type="radio" name="financing-option" id="financing-scholarship" value="scholarship">
@@ -57,7 +59,7 @@
                     <label for="scholarship-reason" class="scholarship-reason">If you have chosen a scholarship, please explain the reason for your request (5000 characters maximum).</label>
                     <textarea name="reason" id="scholarship-reason" cols="72" rows="10" maxlength="5000"></textarea>
                 </div>
-                <div class="form-group">
+                <div class="form-group selection-buttons-legal">
                     <input type="checkbox" name="legal-terms" id="terms-accepted" value="terms-accepted" required>
                     <label for="">I accept the terms and conditions for the loan application.</label>
                     <input type="checkbox" name="legal-terms" id="sms-accepted" value="sms-accepted" checked>
@@ -66,15 +68,16 @@
                     <label for="">I agree to receive updates about my application via e-mail.</label>
                 </div>
                 <div class="form-group"></div>
-                <div class="form-group"></div>
+                <div class="form-group-button">
+                    <input type="submit" id="submit" class="button" value="Submit">
+                </div>
 
-                <input type="submit" id="submit" value="Submit">
             </form>
         </main>
     </div>
 </body>
 <footer>
-    <p>MIT - Mayk Internet Technologies - 20XX</p>
+    <p>Made with care by Nabesima - 2021</p>
 
 </footer>
 </html>
