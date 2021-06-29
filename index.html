@@ -36,7 +36,7 @@
                 </div>
                 <div class="form-group">
                     <label for="courses" id="classes-label" class="form-label">Select your major</label>
-                    <select name="courses" id="courses">
+                    <select name="courses" id="dropdown">
                         <option value="business-administration">Business Administration</option>
                         <option value="medicine">Medicine</option>
                         <option value="law">Law</option>
@@ -48,27 +48,27 @@
                 </div>
                 <div class="form-group">
                     <label for="financing-options" id="financing-options" class="form-label">Select your option</label>
-                    <input type="radio" name="loan" id="financing-options" value="loan">
+                    <input type="radio" name="financing-option" id="financing-loan" value="loan">
                     <label for="loan" value="loan">I am requesting a student loan.</label>
-                    <input type="radio" name="scholarship" id="financing-options" value="scholarship">
-                    <label for="scholarship"value="scholarship">I am requesting a scholarship.</label>
+                    <input type="radio" name="financing-option" id="financing-scholarship" value="scholarship">
+                    <label for="scholarship" value="scholarship">I am requesting a scholarship.</label>
                 </div>
                 <div class="form-group">
                     <label for="scholarship-reason" class="scholarship-reason">If you have chosen a scholarship, please explain the reason for your request (5000 characters maximum).</label>
                     <textarea name="reason" id="scholarship-reason" cols="72" rows="10" maxlength="5000"></textarea>
                 </div>
                 <div class="form-group">
-                    <input type="checkbox" name="terms-accepted" id="terms-accepted" required>
+                    <input type="checkbox" name="legal-terms" id="terms-accepted" value="terms-accepted" required>
                     <label for="">I accept the terms and conditions for the loan application.</label>
-                    <input type="checkbox" name="sms-accepted" id="sms-accepted" checked>
+                    <input type="checkbox" name="legal-terms" id="sms-accepted" value="sms-accepted" checked>
                     <label for="">I agree to receive updates about my application via SMS.</label>
-                    <input type="checkbox" name="email-accepted" id="email-accepted">
+                    <input type="checkbox" name="legal-terms" id="email-accepted" value="email-accepted">
                     <label for="">I agree to receive updates about my application via e-mail.</label>
                 </div>
                 <div class="form-group"></div>
                 <div class="form-group"></div>
 
-                <input type="submit" value="Submit">
+                <input type="submit" id="submit" value="Submit">
             </form>
         </main>
     </div>
